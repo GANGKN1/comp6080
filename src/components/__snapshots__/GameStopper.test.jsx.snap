@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GameStopper  1`] = `null`;
+
+exports[`GameStopper Can check  1`] = `null`;
+
+exports[`GameStopper Can see the  1`] = `null`;
+
+exports[`GameStopper Can see the button of Nah 1`] = `null`;
+
+exports[`GameStopper Can see the button of yeah 1`] = `null`;
+
+exports[`GameStopper Can see the button of yeah 2`] = `null`;
+
+exports[`GameStopper Can see the wanna check string 1`] = `null`;
+
+exports[`GameStopper Can see the wanna check string 2`] = `null`;
+
+exports[`GameStopper The  1`] = `null`;
+
+exports[`GameStopper The game stopper component 1`] = `null`;
+
+exports[`GameStopper The game stopper component should be reder 1`] = `null`;
+
+exports[`GameStopper The game stopper component should be rendered 1`] = `null`;
+
+exports[`GameStopper should have the no button 1`] = `null`;
+
+exports[`GameStopper should have the question text 1`] = `null`;
+
+exports[`GameStopper should have the yes button 1`] = `null`;
+
+exports[`GameStopper should render stop game modal 1`] = `null`;

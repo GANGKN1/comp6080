@@ -1,0 +1,202 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NaviBar There is a BigBrain Title 1`] = `
+<header
+  className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorDefault MuiAppBar-positionStatic css-vb9rq3-MuiPaper-root-MuiAppBar-root"
+>
+  <div
+    className="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-hyum1k-MuiToolbar-root"
+  >
+    <a
+      className="MuiTypography-root MuiTypography-h6 css-p80pko-MuiTypography-root"
+      href="/dashboard"
+      id="bigbrain-title"
+      onClick={[Function]}
+      spacing={1}
+    >
+      BigBrain
+    </a>
+    <a
+      aria-current={null}
+      className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-148uago-MuiButtonBase-root-MuiButton-root"
+      href="/dashboard"
+      id="bigbrain-dashboard"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+    >
+      Dashboard
+    </a>
+    <a
+      aria-current="page"
+      className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-148uago-MuiButtonBase-root-MuiButton-root active"
+      href="/"
+      id="bigbrain-logout"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      style={Object {}}
+      tabIndex={0}
+    >
+      Log Out
+    </a>
+  </div>
+</header>
+`;
+
+exports[`NaviBar There is a dashboard button for clicking 1`] = `
+<header
+  className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorDefault MuiAppBar-positionStatic css-vb9rq3-MuiPaper-root-MuiAppBar-root"
+>
+  <div
+    className="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-hyum1k-MuiToolbar-root"
+  >
+    <a
+      className="MuiTypography-root MuiTypography-h6 css-p80pko-MuiTypography-root"
+      href="/dashboard"
+      id="bigbrain-title"
+      onClick={[Function]}
+      spacing={1}
+    >
+      BigBrain
+    </a>
+    <a
+      aria-current={null}
+      className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-148uago-MuiButtonBase-root-MuiButton-root"
+      href="/dashboard"
+      id="bigbrain-dashboard"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+    >
+      Dashboard
+      <span
+        className="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </a>
+    <a
+      aria-current="page"
+      className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-148uago-MuiButtonBase-root-MuiButton-root active"
+      href="/"
+      id="bigbrain-logout"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      style={Object {}}
+      tabIndex={0}
+    >
+      Log Out
+      <span
+        className="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </a>
+  </div>
+</header>
+`;
+
+exports[`NaviBar There is a logout button for clicking 1`] = `
+<header
+  className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorDefault MuiAppBar-positionStatic css-vb9rq3-MuiPaper-root-MuiAppBar-root"
+>
+  <div
+    className="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-hyum1k-MuiToolbar-root"
+  >
+    <a
+      className="MuiTypography-root MuiTypography-h6 css-p80pko-MuiTypography-root"
+      href="/dashboard"
+      id="bigbrain-title"
+      onClick={[Function]}
+      spacing={1}
+    >
+      BigBrain
+    </a>
+    <a
+      aria-current={null}
+      className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-148uago-MuiButtonBase-root-MuiButton-root"
+      href="/dashboard"
+      id="bigbrain-dashboard"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+    >
+      Dashboard
+    </a>
+    <a
+      aria-current="page"
+      className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-148uago-MuiButtonBase-root-MuiButton-root active"
+      href="/"
+      id="bigbrain-logout"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      style={Object {}}
+      tabIndex={0}
+    >
+      Log Out
+    </a>
+  </div>
+</header>
+`;

@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GameStarter Can see the button of copy 1`] = `null`;
+
+exports[`GameStarter Can see the button of join 1`] = `null`;
+
+exports[`GameStarter Can see the button of yeah 1`] = `null`;
+
+exports[`GameStarter Can see the session if string 1`] = `null`;
+
+exports[`GameStarter Can see the wanna check string 1`] = `null`;
+
+exports[`GameStarter The game starter component should be rendered 1`] = `null`;
+
+exports[`GameStarter The game stopper component should be rendered 1`] = `null`;
+
+exports[`GameStarter an see the button of close 1`] = `null`;
+
+exports[`GameStarter should have texts on the modal 1`] = `null`;
+
+exports[`GameStarter should have the close modal button 1`] = `null`;
+
+exports[`GameStarter should have the copy button 1`] = `null`;
+
+exports[`GameStarter should have the join game button 1`] = `null`;
+
+exports[`GameStarter should render start game modal 1`] = `null`;
