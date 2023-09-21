@@ -1,0 +1,418 @@
+html, body {
+    background-color: #fafafa;
+    height: 100%;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+footer {
+    text-align: center;
+    align-items: center;
+}
+
+.feed {
+    width: auto;
+    height: auto;
+}
+
+.feed-container span {
+    cursor:pointer;
+}
+
+.feed-container {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+}
+
+.feed-holder-area {
+    width: 550px;
+    margin: 10px 0px;
+}
+
+h1 {
+    color: rgb(10,102,194);
+}
+
+.big-title {
+    color: rgb(10,102,194);
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size: 40px;
+    margin-left: 700px;
+}
+.job {
+    width: auto;
+    background: white;
+    border-radius: 5px;
+    height: auto;
+    margin: 15px 0px;
+    border: 0.5px solid lightgrey;
+    padding: 7px;
+}
+
+.first-label {
+    margin-top: 20px;
+}
+.add-new-job-area {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 55px;
+}
+.add-new-job-container {
+    width: 550px;
+    height: 650px;
+    background: white;
+    border: solid 1px grey;
+    padding: 25px;
+    margin: 25px;
+    border-radius: 5px;
+    justify-content: center;
+}
+.comment-area {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+}
+.comment-area-text {
+    border-radius: 10px;
+}
+
+.comment-area-button {
+    width: auto;
+    margin: 5px;
+    height: auto;
+    text-align: center;
+}
+.comment-holder {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.comment {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+    margin: 0px 15px;
+    justify-content: flex-start;
+    border: 1px solid lightgray;
+    padding: 5px;
+    border-radius: 5px;
+}
+.job-post-avatar {
+    width: 40px; 
+    height: 40px; 
+    margin: 5px;
+}
+.job-likes-area {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    background-color: lightblue;
+    align-items: center;
+    text-align: center;
+}
+
+.job-likes {  
+    width: 440px;
+    height: 440px;
+    align-self: center;
+    background: lightgray;
+    border-radius: 8px;
+}
+
+.liked-by {
+    padding: 15px;
+}
+
+.like-small-area {
+    flex-direction: row;
+    display: flex; 
+}
+
+.webpage-grid {
+    display: grid;
+    grid-template-columns: 5fr 8fr;
+    grid-template-rows: 12fr 13fr;
+    height: 90%;
+    grid-template-areas: 
+    "header header header"
+    "sidebar main main"
+    "sidebar main main";
+}
+.webpage-grid > div {
+    padding: 2em;
+}
+.being-watched-by {
+    grid-column: 2;
+    grid-row: 1,2,3;
+    background: lightgray;
+    width: 65%;
+    align-self:flex-start;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 5px;
+}
+@media (max-width: 700px) {
+    .user-area {
+        flex-direction: column;
+        justify-content: flex-start;
+        display: flex;
+        width: auto;
+    }
+    .being-watched-by {
+        width: 85%;
+    }
+} 
+.small-font-text {
+    color:lightblue; 
+    font-size: 70%; 
+    margin-top: -8px;
+}
+.jobs-post-by-user {
+    grid-column: 1;
+    grid-row: 2;
+    width: 80%;
+    align-self:flex-start;
+    padding: 20px;
+    margin: 20px;
+    max-height: 800px;
+    min-height: 400px;
+    overflow: scroll;
+    border-radius: 6px;
+    background: lightgray;
+}
+.user-profile-area {
+    grid-column: 1;
+    grid-row: 1;
+    width: 75%;
+    min-height: 400px;
+    max-height: 400px;
+    background: white;
+    padding: 20px;
+    margin: 20px;
+}
+.cancel-button {
+    float: right;
+}
+.watch {
+    text-align: center;
+    margin-top: 20px;
+}
+.profile-link {
+    width: min-content;
+}
+.profile-link:hover {
+    text-decoration:underline;
+    color: darkblue;
+    cursor: pointer;
+}
+.profile-editing-area {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    height: 90%;
+    width: 90%;
+    padding: 55px;
+}
+.profile-editing-container {
+    width: 550px;
+    height: 650px;
+    padding: 25x;
+    border-radius: 5px;
+    background: lightgray;
+    border: solid 0.5px grey;
+}
+
+.user-area {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 30px;
+    height: 1400px;
+    display: grid;
+    background: transparent;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 25% 75%;
+    padding: 20px;
+    padding-top: 50px;
+    justify-content: center;
+}
+.header-bar {
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 46px;
+    background: white;
+    border-bottom: 1px solid lightgrey;
+    position: fixed;
+    align-items: center;
+    padding: 0px;
+}
+.header {
+    grid-area: header;
+    background: white;
+    position: fixed;
+    width: 100%;
+    height: auto;
+}
+.main {
+    grid-area: main;
+    background: rgb(243,242,239);
+    overflow: scroll;
+}
+.sidebar {
+    grid-area: sidebar;
+    background: black;
+    overflow: scroll;
+}
+
+.Like-button {
+    border: solid 0.5px lightblue;
+    width: 80%;
+}
+.Like-button:hover {
+    background: darkblue;
+}
+.edit-buttons {
+    float: right;
+    width: auto;
+    margin-right: 10px;
+}
+.job-texts {
+    font-size: 80%; 
+    color: darkblue;
+}
+#job-texts-comments {
+    display: inline; 
+    float: right;
+}
+
+.regi-title,
+.login-title {
+    text-align: center;
+    padding: 10px;
+    font-size: larger;
+}
+.login-form,
+.regi-form {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 7px;
+    width: 45%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 20px;
+}
+.register{
+    display: none;
+}
+.form-switcher {
+    font-size: large;
+    text-align: center;
+}
+.switchBtLoginRegiBtn {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    text-decoration: underline;
+    font-size: large;
+}
+.hide {
+    display: none;
+}
+.profile-index:hover {
+    background: white;
+}
+.post-button {
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    float: right;
+    right: 700px;
+    padding-left: 5px;
+}
+#logout {
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    float: right;
+    right: 600px;
+    padding-left: 5px;
+}
+.profile-index {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    float: right;
+    right: 800px;
+    border-radius: 20px;
+    padding-left: 5px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+#profile-avatar {
+    float:right; 
+    position: relative;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+#profile-text {
+    align-self: center; 
+    margin-bottom: 0px;
+}
+#error {
+    position: fixed;
+    height: 10%;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    font-style: italic;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+input[type=text],
+input[type=password],
+input[type=email]{
+    width: 80%;
+    padding: 10px 15px;
+    display: inline-block;
+    margin: 5px 0;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+input[type=button] {
+    color: white;
+    width: 80%;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

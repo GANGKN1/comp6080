@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>LurkForWork</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- You can add your styles and scripts here -->
+        <script type="module" src="src/helpers.js"></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/global.css" />
+    </head>
+    <body>
+        <!-- This is an example app structure, you can modify this as much as you choose --> 
+        <header class="header" id="header">
+            <div class="header-bar">
+                <span class="big-title">lurkforwork</span>
+                <!--profile-index-->
+                <div class="profile-index" id="profile-index">
+                    <img class="hide" id="profile-avatar" src="assets/user.jpg">
+                    <span class="hide" id="profile-text">My profile</span>
+                </div>  
+                <button class="hide post-button"  id="nav-post-button">Post a job</button>
+                <button class="hide logout" id="logout">Logout</button>
+            </div>
+        </header>
+        <main role="main">
+            <!-- app goes here --> 
+            <div id="error" class="hide">
+                <h1 id="error-text"></h1>
+                <button id="error-close-button">close</button>
+            </div>
+            </br>
+            </br>
+            </br>
+            <div id="section-logged-in" class="hide">
+                <div id="mainbody">
+                    <!--Feed page-->
+                    <div class="feed hide" id="feed-container-area">
+                        <div class="feed-container">
+                            <div class="feed-holder-area" id="feed-holder-area">
+                                <div class="job hide" id="job-structure">
+                                    <p class="profile-link">The post person</p>
+                                    <p class="small-font-text">The post date</p>
+                                    <p>job title</p>
+                                    <p>Description of Job</p>
+                                    <p>Job start date</p>
+                                    <img style="width: 100%;display: block;border-radius: 5px;" class="job-image" src="">
+                                    <span class="job-texts">likes</span>
+                                    <span class="job-texts" id="job-texts-comments">comments</span>
+                                    <div style="display: flex;justify-content: space-evenly;flex-direction: row;" class="job-buttons">
+                                        <button class="Like-button">Like</button>
+                                    </div>
+                                    <!--Comments area-->
+                                    <div class="comment-area">
+                                        <img class="job-post-avatar" src="assets/user.jpg">
+                                        <input type="text" class="form-control comment-area-text" placeholder="Add a comment...">
+                                        <button class="comment-area-button">Post</button>
+                                    </div>
+                                    <div class="comment-holder hide" id="comment-holder">
+                                        <div class="comment hide" id="comment-structure">
+                                            <img class="job-post-avatar" src="assets/user.jpg">
+                                            <div>
+                                                <p class="profile-link">name</p>
+                                                <p>comment</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Show Likes page-->
+                                    <div class="job-likes-area hide">
+                                        <div class="job-likes">
+                                            <button type="button" aria-label="Close" style="margin: 15px; float: right;">X</button>
+                                            <div class="liked-by">
+                                                <p style="display: inline; font-weight:bold; font-size: 130%; padding-left: 10px;">Likes</p>
+                                            </div>
+                                            <div class="liked-by hide" id="like-structure">
+                                                <div class="like-small-area">
+                                                    <img class="job-post-avatar" src="assets/user.jpg">
+                                                    <p class="profile-link">name</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--User profile page-->
+                    <div class="user-area hide" id="user-area">
+                        <div class="user-profile-area" id="user-profile-area">
+                            <button type="button" class="cancel-button">Back</button>
+                            <button type="button" class="edit-buttons">Edit Profile</button>
+                            <img style="border-radius: 70%; width: 80px; height: 80px;" src="assets/user.jpg">
+                            <h1>Name</h1>
+                            <p class="small-font-text">id</p>
+                            <p>Email</p>
+                            <p class="small-font-text">Number of watchers</p>
+                            <button type="button" id="watch">Watch</button>
+                            <button type="button"  id="unwatch">Unwatch</button>
+                        </div>
+                        <div class="jobs-post-by-user" id="jobs-post-by-user">
+                            <h3>Jobs</h3>
+                            <div class="hide" id="job-structure2">
+                                <div style="float: right;">
+                                    <button type="button" >Edit</button>
+                                    <button type="button" >Delete</button>
+                                </div>
+                                <p>Post by</p>
+                                <p class="small-font-text">Post date</p>
+                                <p>job title</p>
+                                <p>job description</p>
+                                <p>start date</p>
+                                <img style="width: 100%;display: block;border-radius: 5px;" class="job-image" src="">
+                            </div>
+                        </div>
+                        <div class="being-watched-by" id="being-watched-by">
+                            <h4>This user is being watched by:</h4>
+                            <div class="watch hide" id="watch-structure">
+                                <p class="profile-link">name</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="add-new-job-area hide" id="add-new-job-area">
+                        <div class="add-new-job-container">
+                            <h4 style="width:auto;">Post a job</h4>
+                            <button type="button" class="cancel-button" id="addjob-cancel" style="top: 0px;">Cancel</button>
+                            <label class="first-label" for="title-new-job" >Job Title</label>
+                            <input type="text"  id="title-new-job"><br>
+                            <label for="start-date-add-job">Start from</label>
+                            <input type="datetime-local"  id="start-date-add-job"><br>
+                            <label for="description-add-job" >Job Description</label>
+                            <input type="text"  id="description-add-job"><br>
+                            <label for="image-add-job" >Image of Job</label>
+                            <input type="file"  id="image-add-job"><br>
+                            <button type="button" class="edit-buttons" id="addjob-post-button">Post Job</button>
+                            <button type="button" class="edit-buttons" id="changejob-post-button">Save changes</button>
+                        </div>
+                    </div>
+
+                    <div class="profile-editing-area hide" id="profile-editing-area">
+                        <div class="profile-editing-container" id="profile-editing-container">
+                            <h4 style="width:auto;">Edit Your Profile Here</h4>
+                            <button type="button" class="cancel-button" id="edit-cancel">Cancel</button>
+                            </br>
+                            <label class="first-label" for="edit-email" >Email address</label>
+                            <input type="text" id="edit-email"><br>
+                            <label for="new-name" >First name</label>
+                            <input type="text" id="new-name"><br>
+                            <label for="new-pwd" >Password</label>
+                            <input type="password" id="new-pwd"><br>
+                            <label for="re-new-pwd" >Confirm password</label>
+                            <input type="password"  id="re-new-pwd"><br>
+                            <label for="new-user-avatar" >Profile Picture</label>
+                            <input type="file"  id="new-user-avatar"><br>
+                            <button type="button" class="edit-buttons" id="confirm-btn-for-editing">Save changes</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="section-logged-out">
+                <section id="register" class="hide">
+                    <div class="regi-title">
+                        Registration
+                    </div>
+                    <div class="regi-form">
+                      E-mail: <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+                      Name:  <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+                      Password: <input type="password" id="pwd" name="pwd" placeholder="Enter your password"><br><br>
+                      Re-enter your password:  <input type="password" id="re-pwd" name="re-pwd" placeholder="Re-enter your password"><br><br>
+                      <button id="regi-btn">Register</button>
+                    </div> 
+                    <div class="form-switcher">
+                      Back to <button class="switchBtLoginRegiBtn" id="goToLogin">login.</button>  
+                    </div>
+                </section>
+                <section id="login">
+                    <div class="login-title">You're not logged in. Log in here.</div>
+                    <div class="login-form">
+                        E-mail:<input type="email" id="login-email" name="login-email" placeholder="Enter your email"><br><br>
+                        Password:<input type="password" id="login-pwd" name="login-pwd" placeholder="Enter your password"><br><br>
+                        <button id="login-btn">Log in</button>
+                    </div>
+                    <div class="form-switcher">
+                        New? <button type="button" class="switchBtLoginRegiBtn" id="goToRegi">Register here.</button>  
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; lurkforwork.com 2023</p>
+        </footer>
+        <script type="module" src="src/main.js"></script>
+    </body>
+</html>
+
