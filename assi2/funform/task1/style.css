@@ -1,0 +1,12 @@
+table {
+    margin-bottom: 8px;
+    border: 1px solid;
+    font-size: 13pt;
+}
+
+td,
+th {
+    border: 1px solid;
+    text-align: left;
+    padding: 4px;
+}

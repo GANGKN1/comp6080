@@ -1,0 +1,95 @@
+body {
+    width:420px;
+    height: 699px;
+    font-family: Helvetica;
+    background: linear-gradient(
+        to right,
+        rgba(2,28,45,255) 0px,
+        rgba(2,28,45,255) 35px,
+        rgba(0,38,63,255) 35px,
+        rgba(0,38,63,255) 70px,
+        rgba(2,28,45,255) 70px,
+        rgba(2,28,45,255) 105px,
+        rgba(0,38,63,255) 105px,
+        rgba(0,38,63,255) 140px,
+        rgba(2,28,45,255) 140px,
+        rgba(2,28,45,255) 175px,
+        rgba(0,38,63,255) 175px,
+        rgba(0,38,63,255) 210px,
+        rgba(2,28,45,255) 210px,
+        rgba(2,28,45,255) 245px,
+        rgba(0,38,63,255) 245px,
+        rgba(0,38,63,255) 280px,
+        rgba(2,28,45,255) 280px,
+        rgba(2,28,45,255) 315px,
+        rgba(0,38,63,255) 315px,
+        rgba(0,38,63,255) 350px,
+        rgba(2,28,45,255) 350px,
+        rgba(2,28,45,255) 385px,
+        rgba(0,38,63,255) 385px,
+        rgba(0,38,63,255) 420px,
+        white 420px
+    );
+}
+.container {
+    width:420px;
+    height: 699px;
+}
+.box {
+    width: 32.5px;
+    height: 32.5px;
+    justify-content: center;
+    margin: 1.8px;
+}
+#red-box {
+    width: 78px;
+    height: 37px;
+    display: flex;
+}
+
+
+#purple-box1 {
+    width: 117px;
+    height: 38px;
+    display: flex;
+}
+
+#purple-box {
+    width: 39px;
+    height: 37px;
+    display: flex;
+    margin-left: 36px;
+}
+#red-boxes {
+    position: absolute;
+    margin-top: 627px;
+    margin-left: 25px;
+}
+#purple-boxes {
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 130px;
+}
+#purple-boxes1 {
+    position: absolute;
+    margin-top: 627px;
+    margin-left: 270px;
+}
+#red {
+    background-color: rgba(233,70,89,255);
+}
+
+#purple {
+    background-color: rgba(174,129,255,255);
+}
+
+.trian {
+    left: 0;
+    top: 0;
+    width: 0px;
+    height: 0px;
+    border-color: transparent rgba(251,218,222,255);
+    border-style: solid;
+    border-width: 0px 0px 12px 12px;
+    margin-left: 1px;
+}

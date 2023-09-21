@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assi2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="info-form">
+        <table>
+            <tr>
+                <td>Street Name</td>
+                <td>
+                    <input type="text" id="streetname" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td>Suburb</td>
+                <td>
+                    <input type="text" id="suburb" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td>Postcode</td>
+                <td>
+                    <input type="text" id="postcode" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td>Date of birth</td>
+                <td>
+                    <input type="text" id="birthday" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td>Building Type</td>
+                <td>
+                    <select id="selectedtype" size="1">
+                        <option value="apartment">Apartment</option>
+                        <option value="house">House</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>features</td>
+                <td id="checkboxes">
+                    <input type="checkbox" id="heating" name="heating" value="heating">
+                    <label for="heating">Heating</label><br>
+                    <input type="checkbox" id="airconditioning" name="airconditioning" value="airconditioning">
+                    <label for="airConditioning">AirConditioning</label><br>
+                    <input type="checkbox" id="pool" name="pool" value="pool">
+                    <label for="pool">Pool</label><br>
+                    <input type="checkbox" id="sandpit" name="sandpit" value="sandpit">
+                    <label for="sandpit">Sandpit</label><br>
+                    <button id="selectall">Select All</button>
+                </td>
+            </tr>
+        </table>
+        <br/>
+        <button id="remove">Reset</button>
+        <br/>
+        <br/>
+    </form>
+    <textarea id="output" rows=15 cols=42></textarea>
+    <script src="action.js"></script>
+</body>
+
+</html>
